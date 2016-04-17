@@ -28,7 +28,8 @@ import {WelcomeComponent} from './home/welcome.component';
 @RouteConfig(
     [
         {path: '/welcome', component: WelcomeComponent, name: 'Welcome', useAsDefault: true},
-        {path: '/products', component: ProductListComponent, name: 'Products'}
+        {path: '/products', component: ProductListComponent, name: 'Products'},
+        {path: '/product/:id', component: ProductDetailComponent, name: 'ProductDetail'}
     ]
     
 )

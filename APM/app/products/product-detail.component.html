@@ -1,5 +1,19 @@
 <div class="panel panel-primary">
     <div class="panel">
         {{pageTitle}}
+        <div class="panel-body">
+            testing
+            <div *ngIf="product">
+            <div>{{product.productName}}</div>
+              <div>{{product.productCode}}</div>
+                <div>{{product.releaseDate}}</div>
+                <div><ai-star [rating]="product.starRating"></ai-star></div>
+            </div>
+        </div>
+
+        <div class="panel panel-footer">
+            <a class="btn btn-default" (click)="onBack()" style="width: 80px">
+                <i class="glyphicon glyphicon-chevron-left"></i>Back</a>
+        </div>
     </div>
 </div>
